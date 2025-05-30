@@ -1,1 +1,8 @@
 name: First Workflow
+
+on: 
+  push:
+    branches: [main]
+    
+
+      
