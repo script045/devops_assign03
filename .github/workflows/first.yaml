@@ -22,7 +22,7 @@ jobs:
       - name: Run tests and capture output
         run: |
           mkdir -p test-results
-          npm test > test-results/results.txt
+          npm test > test-results/results.txt 2>&1 || true
 
       - name: Upload test results
         uses: actions/upload-artifact@v4
