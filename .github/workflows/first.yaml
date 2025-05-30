@@ -32,7 +32,7 @@ jobs:
 
   deploy:
     needs: test
-    runs-on: [ubuntu-latest, nodejs, staging]
+    runs-on: [self-hosted, nodejs, staging]
     steps:
       - name: Checkout code
         uses: actions/checkout@v3
